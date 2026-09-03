@@ -1,5 +1,3 @@
-// script.js - Главный оркестратор симуляции и визуализации
-
 let simInterval = null;
 let simSpeed = 10; // Сколько секунд физики прогонять за 1 кадр UI (по умолчанию 10x)
 let stepCount = 0;
