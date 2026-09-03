@@ -40,7 +40,7 @@ class SmartBoilerController {
 
     // ФАЗА 1: Сушка и пиролиз (включается только в начале, когда дров больше 12 кг)
     if (m_wood > 12.0 && ((dT_furnace > 2.0 * dT_water || T_furnace < 130) && T_water < 50)) {
-        this.currentPhase = "1. Сушка и пиролиз (Импульсный обдув)";
+        this.currentPhase = "";
         this.dryingPhaseDuration += dt;
         this.estimatedMoisture = Math.min(45, Math.max(5, Math.round(this.dryingPhaseDuration / 12)));
         fanSpeed = (Math.floor(this.timer / 6) % 2 === 0) ? 75 : 25;
