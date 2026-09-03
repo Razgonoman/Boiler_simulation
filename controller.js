@@ -17,7 +17,7 @@ class SmartBoilerController {
 
     // 1. ПОЛНОЕ СГОРАНИЕ: если осталось меньше 100 грамм из 15 кг
     if (m_wood <= 0.2) {
-        this.currentPhase = "Горение завершено (Котел остыл)";
+        this.currentPhase = "";
         return { fanSpeed: 0, phaseName: this.currentPhase, estimatedMoisture: this.estimatedMoisture };
     }
 
